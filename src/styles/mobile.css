@@ -1,0 +1,54 @@
+@media (max-width: 768px) {
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.jose h1 {
+    font-size: 1.2rem;
+}
+.container img {
+    width: 60px;
+}
+.profile img {
+    position: relative;
+    height: 70px;
+}
+.window img {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.modal {
+    position: fixed;
+    top: 25%;
+    left: 20% !important;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+}
+
+.book-modal img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.book-modal p {
+    font-size: 0.4rem;
+}
+
+.skill-details img {
+    width: 30px;
+    height: 30px;
+}
+
+.game-image {
+    height: auto;
+}
+
+.video-list iframe {
+    width: 380px;
+}
+
+
+}

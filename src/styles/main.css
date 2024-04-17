@@ -1,0 +1,283 @@
+.jose {
+  --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+    background: 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
+body {
+  background: black;
+}
+.studio {
+  background: black;
+}
+
+.jose h1 {
+  color: #d4e7f6;
+}
+.container2 p, .jose .header p {
+  color: rgb(111, 109, 109);
+  position: absolute;
+  bottom: 0;
+  right: 1%;
+}
+
+.moon p {
+  
+}
+.container {
+  padding: 0 6rem;
+    justify-items: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header header"
+      "books . . message"
+      "speaker window picture games"
+      "tv profile . work"; 
+  }
+
+  .profile { grid-area: profile; }
+  .tv { grid-area: tv; }
+  .speaker { grid-area: speaker; }
+  .books { grid-area: books; }
+  .window { grid-area: window; }
+  .games { grid-area: games; }
+  .work { grid-area: work; }
+  .message { grid-area: message; }
+  .picture { grid-area: picture; }
+  .header { grid-area: header; }
+
+  .container2 {
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      "mailbox studio ."
+      "moon moon moon"; 
+  }
+  .moon { grid-area: moon; }
+  .studio { grid-area: studio; }
+  .mailbox { grid-area: mailbox; }
+
+  .container2 img {
+    position: absolute;
+    bottom: 0;
+  }
+.moon img {
+  width: 100%;
+  z-index: -10;
+}
+
+.studio img {
+  width: 20%;
+  bottom: 4%;
+}
+
+.mailbox img {
+  width: 8%;
+  left: 20%;
+  bottom: 3%;
+
+} 
+  .container img {
+    width: 200px;
+  }
+
+  .profile-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+
+  .tv img {
+    bottom: 0;
+    width: 330px;
+
+  }
+  
+  .window img {
+    width: 300px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+  }
+
+  .profile img {
+    width: 150px;
+  position: absolute;
+  bottom: 0;
+  }
+
+  .picture img {
+    width: 100px;
+  }
+
+  .message img {
+    width: 100px;
+  }
+  .profile-info {
+    text-align: left;
+  }
+  
+  .profile-info p {
+    padding: 10px 10px;
+
+  }
+
+  .skills {
+    margin-top: 20px;
+  }
+  
+  .skill {
+    margin: 10px 10px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .skill-details img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .progress-bar-container {
+    width: 60px;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #6c5ce7;
+    transition: width 0.5s ease;
+  }
+  
+  .percentage {
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .social-links {
+    text-align: center;
+  }
+  .social-links h3{
+    padding-bottom: 10px;
+  }
+  
+  .social-link a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    margin: 10px 10px;
+  }
+
+  .profile-info {
+    border: solid 1px #98A2B7;
+    border-radius: 5px;
+    padding: 1rem;
+    color: whitesmoke;
+  }
+
+  .label {
+    background-color: rgb(30, 30, 38);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #eee;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .profile .label {
+    position: absolute;
+    z-index: 20;
+    top: 45%;
+  }
+
+  .game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .game-card {
+    width: calc(17% - 10px); /* Adjust width to fit 4 cards per row with spacing */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .game-image {
+    width: 100%;
+    height: 150px; /* Set a fixed height for consistent card height */
+    object-fit: cover; /* Maintain aspect ratio and fill container */
+  }
+  
+  .game-details {
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .console-logo {
+    width: 20px;
+    height: 10px;
+    margin-right: 3px; /* Add margin between console logo and console name */
+  }
+  
+  .console-name {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .game-title {
+    margin-top: 5px;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(152,162,183);
+  }
+  
+  .console-info {
+    display: flex;
+  }
+
+  .container img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .tv:hover .label,.profile:hover .label, .books:hover .label, .games:hover .label, .speaker:hover .label, .work:hover .label, .message:hover .label, .picture:hover .label {
+    opacity: 1;
+  }
+  .books:hover img, .games:hover img, .speaker:hover img, .work:hover img, .message:hover img, .picture:hover img {
+    cursor: pointer;
+    transform: translateY(-5px) rotate(2deg) scale(1.05);
+  }
+  .tv:hover img,.profile:hover img, .mailbox img {
+    cursor: pointer;
+  }
