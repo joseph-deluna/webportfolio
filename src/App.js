@@ -1,23 +1,21 @@
-import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'; // Assuming you have a global CSS file
 import './styles/main.css';
 import './styles/modal.css';
 import './styles/mobile.css';
 
-const Jose = React.lazy(() => import('./links/Jose'));
-const TheDreamerStudio = React.lazy(() => import('./links/TheDreamerStudio'));
+import Jose from './links/Jose';
+import TheDreamerStudio from './links/TheDreamerStudio';
 
 function App() {
   return (
-    <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+    <BrowserRouter>
         <Routes>
           <Route path="/" element={<Jose />} />
           <Route path="/thedreamerstudio" element={<TheDreamerStudio />} />
         </Routes>
-      </Suspense>
-    </Router>
+    </BrowserRouter>
   );
 }
 
