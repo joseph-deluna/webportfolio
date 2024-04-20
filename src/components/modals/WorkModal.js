@@ -1,5 +1,5 @@
 import React from 'react';
-import smartHomeImage1 from '../../assets/img/work/smart_city_project1.jpg'; // Import images for smart home projects
+import smartHomeImage1 from '../../assets/img/work/smart_home_project1.jpg'; // Import images for smart home projects
 import smartHomeImage2 from '../../assets/img/work/smart_home_project2.jpg'; // Import images for smart home projects
 import smartHomeImage3 from '../../assets/img/work/smart_home_project3.jpg'; // Import images for smart home projects
 import smartHomeImage4 from '../../assets/img/work/smart_home_project4.jpg'; // Import images for smart home projects
